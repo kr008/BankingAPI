@@ -86,16 +86,23 @@ h1 {
 }
 
 .logo {
-  margin-left: -600px;
+  margin-left: -550px;
   margin-top: -150px;
 }
 
 .content {
-  width: 50%;
-  height: 50%;
+  height: 54%;
   position: absolute;
   bottom: 0;
   text-align: center;
+}
+
+.content-left {
+  width: 60%;
+}
+
+.content-right {
+  width: 40%;
 }
 
 .info-logo {
