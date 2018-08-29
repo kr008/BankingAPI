@@ -129,7 +129,7 @@ h1 {
 
 .button {
   margin-top: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: Muli;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 13px;
@@ -137,7 +137,6 @@ h1 {
   display: inline-block;
   padding: 11px 36px;
   border-radius: 50px;
-  transition: 0.5s;
   margin-bottom: 30px;
   border: 2px solid #00A3E0;
   background: #00A3E0;
