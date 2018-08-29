@@ -14,11 +14,4 @@ jQuery(document).ready(function ($) {
 
   new WOW().init();
 
-  $('.nav-menu').superfish({
-    animation: {
-      opacity: 'show'
-    },
-    speed: 400
-  });
-
 });
