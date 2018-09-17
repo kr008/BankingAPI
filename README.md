@@ -1,5 +1,5 @@
 Key | Description
------|-----
+:-----|:-----
 error.swift_code.is.blank | SWIFT code is empty
 
 ## Welcome to the Banking API
