@@ -13,7 +13,7 @@ The purpose of this documentation is to give an overview of all the APIs, which 
 To start working with our API, you need information about:
 - apiAddress - address of Your sanbox
 ```
-https://cbp-api.asseco.pl/banking-service-swagger
+https://cbp-api.asseco.pl/retail-banking-swagger/index.html
 ```
 - jwtToken - authorization token which is provided by our organization
 - customerId - internal customer's identificator in the bank
