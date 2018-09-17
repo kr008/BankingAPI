@@ -692,6 +692,3 @@ To integrate with our RESTful API you can use your favourite tool. We suggest:
 ### Sandbox
 
 [Try API](https://cbp-api.asseco.pl/retail-banking-swagger/index.html)
-
-
-<details><summary>Show all</summary>details</details>
