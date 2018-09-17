@@ -21,7 +21,7 @@ https://cbp-api.asseco.pl/banking-service-swagger
 
 ***Test data:***
 
-**Customer 1**
+- Customer 1
 
 
 - jwtToken
@@ -31,6 +31,7 @@ Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsicmViLWN1c3RvbWVyLXNlcnZp
 ```
 
 - customerId
+
 ```
 328059
 ```
@@ -41,7 +42,7 @@ Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsicmViLWN1c3RvbWVyLXNlcnZp
 2267
 ```  
 
-**Customer 2**
+- Customer 2
 
 
 - jwtToken
@@ -54,11 +55,13 @@ Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsicmViLWN1c3RvbWVyLXNlcnZp
 ```
 328072
 ``` 
+
 - accessProfileId
 
 ```
 2307
 ```  
+
 
 Below is a simple curl GET request to our API:
 Before use, please fill required parameters: jwtToken, apiAddress, customerId.
