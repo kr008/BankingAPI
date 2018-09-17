@@ -347,7 +347,7 @@ curl -k -X POST --header 'Content-Type: application/json' --header 'Accept: appl
 
 ***Validation errors***
 ```
-error.swift_code.is.blank - SWIFT code is empty
+***error.swift_code.is.blank*** - SWIFT code is empty
 error.exceeds.available.funds.for.agreement - The amount exceeds the available funds
 error.lack.of.access.in.active.mode - No permission for debiting the account
 error.account.of.restricted.access.product - No permission for debiting the account - restricted access to contract
