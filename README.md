@@ -142,7 +142,7 @@ This resource describe a basic banking product - account. It's the financial reg
 
 ***Endpoint URL***
 ```
-/retail-banking-swagger/api/account
+/api/account
 ```
 
 ***Curl***
