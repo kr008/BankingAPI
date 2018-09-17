@@ -346,6 +346,7 @@ curl -k -X POST --header 'Content-Type: application/json' --header 'Accept: appl
 ```
 
 ***Validation errors***
+
 Key | Description
 -----|-----
 error.swift_code.is.blank | SWIFT code is empty
