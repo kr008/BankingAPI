@@ -308,6 +308,9 @@ curl -k -X POST --header 'Content-Type: application/json' --header 'Accept: appl
   "_links": {}
 }
 ```
+|---|---|---|---|---|
+
+
 
 ***Validation errors***
 | Key | Description |
