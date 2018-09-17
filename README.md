@@ -1,7 +1,3 @@
-Key | Description
-:-----|:-----
-error.swift_code.is.blank | SWIFT code is empty
-
 ## Welcome to the Banking API
 
 Our API allows easy and secure access to bank accounts, customer data, many payment methods, and much more.
@@ -350,40 +346,41 @@ curl -k -X POST --header 'Content-Type: application/json' --header 'Accept: appl
 ```
 
 ***Validation errors***
-```
-***error.swift_code.is.blank*** - SWIFT code is empty
-error.exceeds.available.funds.for.agreement - The amount exceeds the available funds
-error.lack.of.access.in.active.mode - No permission for debiting the account
-error.account.of.restricted.access.product - No permission for debiting the account - restricted access to contract
-error.recipient.account.is.the.same.as.the.sender - Debited account is the same as beneficiary account
-error.recipient.account.number.is.blank - Benificiary account is empty
-error.recipient.name.is.blank - Beneficiary name is empty
-error.recipient.address.is.blank - Beneficiary address is empty
-error.invalid.currency.for.insurance.transfer - Invalid operation type for foreign account
-error.bank_recipient.account.is_not_member_sorbnet - Remitter's bank doesn't support SORBNET transaction type. To proceed change transaction type to ELIXIR.
-error.recipient.account.is.internal.for.sorbnet - Internal payment cannot be realized as SORBNET. To proceed change transaction type to ELIXIR.
-error.recipient.account.cannot_belongs_to_group_for.sorbnet - Intragroup payment cannot be realized as SORBNET. To proceed change transaction type to ELIXIR.
-error.invalid.currency.for.standard.transfer - Invalid operation type for foreign account
-error.invalid.remmitter.account.for.sepa.transfer - Account to be debited should be in PLN or EUR
-error.invalid.currency.for.sepa.transfer - Incorrect currency for SEPA transfer.
-error.express_elixir.invalid_date - Incorrect date
-error.express_elixir.bank_not_participate_in_system - Benificiary's bank is not Express Elixir participant
-error.express_elixir.service_unavailable_for_beneficiary_bank - Beneficiary's bank is unavailable in Express Elixir at the moment
-error.invalid.amount_vat.bigger.than.amount - VAT is greater than transaction amount
-error.invalid.amount_vat.remmiter_account.not.enough.accessibleAssets - Transfer amount exceeds the accessible assets
-error.invalid.amount_vat.remmiter_account.and.vat_account.not.enough.accessibleAssets - Transfer amount exceeds the accessible assets
-error.beneficiary.acc.is.own.vat.acc - Recipient account is the same as sender's VAT account
-error.remitter.account.is.not.with.polish.currency - Debited account is not in polish currency
-error.description.title.is.too.long - Transfer title is too long
-error.invalid.amount_vat.remmiter_account.and.vat_account.not.enough.accessibleAssets - Transfer amount exceeds the accessible assets
-error.remitter.account.is.vat.account - Sender's account cannot be VAT account
-error.account.is.vat.account - Account is VAT account
-error.account.has.no.vat.account - Account is the same as tax office's
-error.no.access.to.vat.account - Lack of permissions for charging VAT account
-validate_recipient_account.is.tax.office.account - Account is the same as tax office's
-error.change.clearing.system - Invalid type of payment, automatic change of payment type
-error.invalid_account_iban - Incorrect account number
-```
+Key | Description
+-----|-----
+error.swift_code.is.blank | SWIFT code is empty
+error.exceeds.available.funds.for.agreement | The amount exceeds the available funds
+error.lack.of.access.in.active.mode | No permission for debiting the account
+error.account.of.restricted.access.product | No permission for debiting the account - restricted access to contract
+error.recipient.account.is.the.same.as.the.sender | Debited account is the same as beneficiary account
+error.recipient.account.number.is.blank | Benificiary account is empty
+error.recipient.name.is.blank | Beneficiary name is empty
+error.recipient.address.is.blank | Beneficiary address is empty
+error.invalid.currency.for.insurance.transfer | Invalid operation type for foreign account
+error.bank_recipient.account.is_not_member_sorbnet | Remitter's bank doesn't support SORBNET transaction type. To proceed change transaction type to ELIXIR.
+error.recipient.account.is.internal.for.sorbnet | Internal payment cannot be realized as SORBNET. To proceed change transaction type to ELIXIR.
+error.recipient.account.cannot_belongs_to_group_for.sorbnet | Intragroup payment cannot be realized as SORBNET. To proceed change transaction type to ELIXIR.
+error.invalid.currency.for.standard.transfer | Invalid operation type for foreign account
+error.invalid.remmitter.account.for.sepa.transfer | Account to be debited should be in PLN or EUR
+error.invalid.currency.for.sepa.transfer | Incorrect currency for SEPA transfer.
+error.express_elixir.invalid_date | Incorrect date
+error.express_elixir.bank_not_participate_in_system | Benificiary's bank is not Express Elixir participant
+error.express_elixir.service_unavailable_for_beneficiary_bank | Beneficiary's bank is unavailable in Express Elixir at the moment
+error.invalid.amount_vat.bigger.than.amount | VAT is greater than transaction amount
+error.invalid.amount_vat.remmiter_account.not.enough.accessibleAssets | Transfer amount exceeds the accessible assets
+error.invalid.amount_vat.remmiter_account.and.vat_account.not.enough.accessibleAssets | Transfer amount exceeds the accessible assets
+error.beneficiary.acc.is.own.vat.acc | Recipient account is the same as sender's VAT account
+error.remitter.account.is.not.with.polish.currency | Debited account is not in polish currency
+error.description.title.is.too.long | Transfer title is too long
+error.invalid.amount_vat.remmiter_account.and.vat_account.not.enough.accessibleAssets | Transfer amount exceeds the accessible assets
+error.remitter.account.is.vat.account | Sender's account cannot be VAT account
+error.account.is.vat.account | Account is VAT account
+error.account.has.no.vat.account | Account is the same as tax office's
+error.no.access.to.vat.account | Lack of permissions for charging VAT account
+validate_recipient_account.is.tax.office.account | Account is the same as tax office's
+error.change.clearing.system | Invalid type of payment, automatic change of payment type
+error.invalid_account_iban | Incorrect account number
+
 
 
 #### /transaction
