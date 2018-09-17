@@ -309,6 +309,42 @@ curl -k -X POST --header 'Content-Type: application/json' --header 'Accept: appl
 }
 ```
 
+***Response body for wrong request (invalid recipientAccountNo parameter)***
+```json
+{
+  "type": "warn",
+  "subType": "validation",
+  "text": null,
+  "errors": [
+    {
+      "codes": [
+        "NRB.payments.recipientAccountNo",
+        "NRB.recipientAccountNo",
+        "NRB"
+      ],
+      "arguments": [
+        {
+          "codes": [
+            "payments.recipientAccountNo",
+            "recipientAccountNo"
+          ],
+          "arguments": null,
+          "defaultMessage": "recipientAccountNo",
+          "code": "recipientAccountNo"
+        }
+      ],
+      "defaultMessage": "validate.invalid_account_number",
+      "objectName": "payments",
+      "field": "recipientAccountNo",
+      "rejectedValue": "wrongAccountNumber",
+      "bindingFailure": false,
+      "code": "NRB"
+    }
+  ],
+  "errorIdentifier": null
+}
+```
+
 ***Validation errors***
 ```
 error.swift_code.is.blank - SWIFT code is empty
