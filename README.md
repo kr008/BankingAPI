@@ -21,7 +21,7 @@ https://cbp-api.asseco.pl/banking-service-swagger
 
 ***Test data:***
 
-- Customer 1
+***Customer 1***
 
 
 - jwtToken
@@ -42,7 +42,7 @@ Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsicmViLWN1c3RvbWVyLXNlcnZp
 2267
 ```  
 
-- Customer 2
+***Customer 2***
 
 
 - jwtToken
