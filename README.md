@@ -1,5 +1,18 @@
-- [Getting Started](#heading)
-  * [Test data](#sub-heading)
+- [Getting Started](#getting-started)
+  * [Test data](#test-data)
+  * [Security issue](#security-issue)
+- [Business domain](#business-domain)
+  * [/user](#user)
+  * [/account](#account)
+  * [/payments](#payments)
+  * [/transaction](#transaction)
+  * [/credit](#credit)
+  * [/deposit](#deposit)
+  * [/card](#card)
+  * [/card_transaction](#card_transaction)
+- [Tools](#tools)
+- [Sandbox](#sandbox)
+
 ## Welcome to the Banking API
 
 Our API allows easy and secure access to bank accounts, customer data, many payment methods, and much more.
@@ -21,7 +34,7 @@ https://cbp-api.asseco.pl/retail-banking-swagger/index.html
 - customerId - internal customer's identificator in the bank
 - accessProfileId - internal customer's profile identificator in the bank
 
-***Test data:***
+#### Test data:
 
 ***Customer 1***
 
@@ -98,7 +111,7 @@ Production security flow is based on the OAuth2 flow and it's described below:
 
 In the sandbox, we provide for you ready to use JWT token, which will not expire.
 
-### Bussiness domain
+### Business domain
 
 #### /user
 This resource describes personal information about bank's customers. The user is in relation with following financial resources.
