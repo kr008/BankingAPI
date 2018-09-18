@@ -8,6 +8,8 @@ This API is a sandbox version, and its purpose is to make developers familiar wi
 
 The purpose of this documentation is to give an overview of all the APIs, which are included in API sandbox. There is separate documentation for each API, which includes the full API reference of the particular API and any specific information which is not presented in this overview.
 
+### Table of content
+
 - [Getting Started](#getting-started)
   * [Test data](#test-data)
   * [Security issue](#security-issue)
