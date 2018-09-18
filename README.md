@@ -1,3 +1,13 @@
+## Welcome to the Banking API
+
+Our API allows easy and secure access to bank accounts, customer data, many payment methods, and much more.
+
+Our APIs are RESTful. We use JSON format and OAuth authorization based on JSON Web Token.
+
+This API is a sandbox version, and its purpose is to make developers familiar with the upcoming API production releases. Moreover, it allows the developers to experiment and build applications, which can use the API, before its official release. See sandbox for more information regarding the sandbox and what it is.
+
+The purpose of this documentation is to give an overview of all the APIs, which are included in API sandbox. There is separate documentation for each API, which includes the full API reference of the particular API and any specific information which is not presented in this overview.
+
 - [Getting Started](#getting-started)
   * [Test data](#test-data)
   * [Security issue](#security-issue)
@@ -12,16 +22,6 @@
   * [/card_transaction](#card_transaction)
 - [Tools](#tools)
 - [Sandbox](#sandbox)
-
-## Welcome to the Banking API
-
-Our API allows easy and secure access to bank accounts, customer data, many payment methods, and much more.
-
-Our APIs are RESTful. We use JSON format and OAuth authorization based on JSON Web Token.
-
-This API is a sandbox version, and its purpose is to make developers familiar with the upcoming API production releases. Moreover, it allows the developers to experiment and build applications, which can use the API, before its official release. See sandbox for more information regarding the sandbox and what it is.
-
-The purpose of this documentation is to give an overview of all the APIs, which are included in API sandbox. There is separate documentation for each API, which includes the full API reference of the particular API and any specific information which is not presented in this overview.
 
 ### Getting Started
 
