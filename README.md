@@ -729,22 +729,294 @@ This resource contains all information about financial operations within the car
 
 ***Curl***
 ```
-curl -k -X GET --header 'Accept: application/json' --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsicmViLWN1c3RvbWVyLXNlcnZpY2UiXSwidXNlcl9uYW1lIjoiTUIxQk1PNVIiLCJpZGVudGl0eSI6eyJvcmdfdW5pdCI6Im91PTk0NixvPVNHQi1CQU5LLGRjPUFDUCxkYz11ZmUsZGM9Y29tIiwicGVyc29uX2lkIjoiMzI4MDcyIiwicm9sZSI6IkNVU1RPTUVSIiwiYWNjZXNzX3Byb2ZpbGVfaWQiOiIyMzA3In0sInNjb3BlIjpbIndyaXRlIiwicmVhZCJdLCJpc3MiOiJpc3N1ZXIiLCJqdGkiOiJlYmY0ZGZmYS00ZWU2LTQ4NGUtODdiMy1hYzc5MDk3ZWRmZjUiLCJjbGllbnRfaWQiOiJyZWJSZXRhaWwiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.cQRnONmhv4WR8p3tTSjXZXYo45Xt46R_OptL-2Nj2Mg' 'https://cbp-api.asseco.pl/retail-banking-swagger/api/card_transaction?customerId=328072&accessProfileId=2307&cardId=2443&dateFrom=2018-09-16T10%3A00%3A43.589Z&dateTo=2018-09-17T11%3A00%3A43.589Z&pageNumber=1&pageSize=10'
+curl -k -X GET --header 'Accept: application/json' --header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsicmViLWN1c3RvbWVyLXNlcnZpY2UiXSwidXNlcl9uYW1lIjoiTUIxQk1PNVIiLCJpZGVudGl0eSI6eyJvcmdfdW5pdCI6Im91PTk0NixvPVNHQi1CQU5LLGRjPUFDUCxkYz11ZmUsZGM9Y29tIiwicGVyc29uX2lkIjoiMzI4MDcyIiwicm9sZSI6IkNVU1RPTUVSIiwiYWNjZXNzX3Byb2ZpbGVfaWQiOiIyMzA3In0sInNjb3BlIjpbIndyaXRlIiwicmVhZCJdLCJpc3MiOiJpc3N1ZXIiLCJqdGkiOiJlYmY0ZGZmYS00ZWU2LTQ4NGUtODdiMy1hYzc5MDk3ZWRmZjUiLCJjbGllbnRfaWQiOiJyZWJSZXRhaWwiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.cQRnONmhv4WR8p3tTSjXZXYo45Xt46R_OptL-2Nj2Mg' 'https://cbp-api.asseco.pl/retail-banking-swagger/api/card_transaction?customerId=328072&accessProfileId=2307&cardId=2463&dateFrom=2017-04-01T00%3A00%3A10.589Z&dateTo=2018-09-12T00%3A00%3A10.589Z&pageNumber=1&pageSize=10'
 ```
 
 ***Response body***
 ```json
 {
-  "totalElements": 0,
+  "totalElements": 8,
   "pageNumber": 1,
   "pageSize": 10,
-  "totalPages": 0,
+  "totalPages": 1,
   "sortOrder": null,
   "sortDirection": null,
-  "content": [],
-  "numberOfElements": 0,
+  "content": [
+    {
+      "id": "3697155",
+      "description": [
+        "Wpłata"
+      ],
+      "amount": 50000,
+      "accountAmount": 50000,
+      "settlementAmount": null,
+      "currency": "PLN",
+      "accountCurrency": "PLN",
+      "settlementCurrency": null,
+      "exchange": null,
+      "accountingDate": 1490997600000,
+      "transactionDate": 1490997600000,
+      "transactionType": null,
+      "transactionTypeDesc": "Wpłata na rachunek",
+      "accountNo": "87161011332016015000250001",
+      "oppositeAccountNo": null,
+      "remitterBank": null,
+      "remitterSwift": null,
+      "remitter": [
+        "KOWAL JAN",
+        "ul. NOWA 11/11",
+        "34-456 RZESZÓW"
+      ],
+      "beneficiaryBank": null,
+      "beneficiarySwift": null,
+      "beneficiary": [
+        "KOWAL JAN",
+        "ul. NOWA 11/11",
+        "34-456 RZESZÓW"
+      ],
+      "side": "CREDIT",
+      "balanceAfterOperation": 50000
+    },
+    {
+      "id": "3697157",
+      "description": [
+        "Test"
+      ],
+      "amount": -7,
+      "accountAmount": -7,
+      "settlementAmount": null,
+      "currency": "PLN",
+      "accountCurrency": "PLN",
+      "settlementCurrency": null,
+      "exchange": null,
+      "accountingDate": 1490997600000,
+      "transactionDate": 1490997600000,
+      "transactionType": null,
+      "transactionTypeDesc": "Przelew wychodzący zewnętrzny",
+      "accountNo": "87161011332016015000250001",
+      "oppositeAccountNo": null,
+      "remitterBank": null,
+      "remitterSwift": null,
+      "remitter": [
+        "JAN KOWAL",
+        "",
+        "ul. NOWA 11/11 ",
+        "34-456 RZESZÓW"
+      ],
+      "beneficiaryBank": null,
+      "beneficiarySwift": null,
+      "beneficiary": [
+        "Test"
+      ],
+      "side": "DEBIT",
+      "balanceAfterOperation": 49993
+    },
+    {
+      "id": "3697158",
+      "description": [
+        "Opłaty i prowizje - Przelewy Eliksi",
+        "r"
+      ],
+      "amount": -0.5,
+      "accountAmount": -0.5,
+      "settlementAmount": null,
+      "currency": "PLN",
+      "accountCurrency": "PLN",
+      "settlementCurrency": null,
+      "exchange": null,
+      "accountingDate": 1490997600000,
+      "transactionDate": 1490997600000,
+      "transactionType": null,
+      "transactionTypeDesc": "Pobranie opłaty",
+      "accountNo": "87161011332016015000250001",
+      "oppositeAccountNo": null,
+      "remitterBank": null,
+      "remitterSwift": null,
+      "remitter": [
+        "KOWAL JAN ul. NOWA 11/11 34-456 RZESZÓW"
+      ],
+      "beneficiaryBank": null,
+      "beneficiarySwift": null,
+      "beneficiary": [
+        "SGB-Bank S.A."
+      ],
+      "side": "DEBIT",
+      "balanceAfterOperation": 49992.5
+    },
+    {
+      "id": "3697159",
+      "description": [
+        "Lokata nr DS\\17000092",
+        "- założenie"
+      ],
+      "amount": -555,
+      "accountAmount": -555,
+      "settlementAmount": null,
+      "currency": "PLN",
+      "accountCurrency": "PLN",
+      "settlementCurrency": null,
+      "exchange": null,
+      "accountingDate": 1490997600000,
+      "transactionDate": 1490997600000,
+      "transactionType": null,
+      "transactionTypeDesc": "Przelew wychodzący wewnętrzny",
+      "accountNo": "87161011332016015000250001",
+      "oppositeAccountNo": null,
+      "remitterBank": null,
+      "remitterSwift": null,
+      "remitter": [
+        "KOWAL JAN",
+        "ul. NOWA 11/11",
+        "34-456 RZESZÓW"
+      ],
+      "beneficiaryBank": null,
+      "beneficiarySwift": null,
+      "beneficiary": [
+        "KOWAL JAN",
+        "ul. NOWA 11/11",
+        "34-456 RZESZÓW"
+      ],
+      "side": "DEBIT",
+      "balanceAfterOperation": 49437.5
+    },
+    {
+      "id": "3697160",
+      "description": [
+        "Uruchomienie pożyczkinr KHM\\1700014"
+      ],
+      "amount": 30000,
+      "accountAmount": 30000,
+      "settlementAmount": null,
+      "currency": "PLN",
+      "accountCurrency": "PLN",
+      "settlementCurrency": null,
+      "exchange": null,
+      "accountingDate": 1490997600000,
+      "transactionDate": 1490997600000,
+      "transactionType": null,
+      "transactionTypeDesc": "Przelew przychodzący wewnętrzny",
+      "accountNo": "87161011332016015000250001",
+      "oppositeAccountNo": null,
+      "remitterBank": "SGB-BANK Oddział - Finansowe Centrum Biznesu w Poznaniu",
+      "remitterSwift": null,
+      "remitter": [
+        "KOWAL JAN",
+        "ul. NOWA 11/11",
+        "34-456 RZESZÓW"
+      ],
+      "beneficiaryBank": null,
+      "beneficiarySwift": null,
+      "beneficiary": [
+        "KOWAL JAN",
+        "ul. NOWA 11/11",
+        "34-456 RZESZÓW"
+      ],
+      "side": "CREDIT",
+      "balanceAfterOperation": 79437.5
+    },
+    {
+      "id": "3697163",
+      "description": [
+        "Wypłata własna"
+      ],
+      "amount": -19437.5,
+      "accountAmount": -19437.5,
+      "settlementAmount": null,
+      "currency": "PLN",
+      "accountCurrency": "PLN",
+      "settlementCurrency": null,
+      "exchange": null,
+      "accountingDate": 1490997600000,
+      "transactionDate": 1490997600000,
+      "transactionType": null,
+      "transactionTypeDesc": "Wypłata z rachunku",
+      "accountNo": "87161011332016015000250001",
+      "oppositeAccountNo": null,
+      "remitterBank": null,
+      "remitterSwift": null,
+      "remitter": [
+        "KOWAL JAN",
+        "ul. NOWA 11/11",
+        "34-456 RZESZÓW"
+      ],
+      "beneficiaryBank": null,
+      "beneficiarySwift": null,
+      "beneficiary": [
+        "KOWAL JAN",
+        "ul. NOWA 11/11",
+        "34-456 RZESZÓW"
+      ],
+      "side": "DEBIT",
+      "balanceAfterOperation": 60000
+    },
+    {
+      "id": "3697164",
+      "description": [
+        "Wypłata własna"
+      ],
+      "amount": -10000,
+      "accountAmount": -10000,
+      "settlementAmount": null,
+      "currency": "PLN",
+      "accountCurrency": "PLN",
+      "settlementCurrency": null,
+      "exchange": null,
+      "accountingDate": 1490997600000,
+      "transactionDate": 1490997600000,
+      "transactionType": null,
+      "transactionTypeDesc": "Wypłata z rachunku",
+      "accountNo": "87161011332016015000250001",
+      "oppositeAccountNo": null,
+      "remitterBank": null,
+      "remitterSwift": null,
+      "remitter": [
+        "KOWAL JAN",
+        "ul. NOWA 11/11",
+        "34-456 RZESZÓW"
+      ],
+      "beneficiaryBank": null,
+      "beneficiarySwift": null,
+      "beneficiary": [
+        "KOWAL JAN",
+        "ul. NOWA 11/11",
+        "34-456 RZESZÓW"
+      ],
+      "side": "DEBIT",
+      "balanceAfterOperation": 50000
+    },
+    {
+      "id": "3697344",
+      "description": null,
+      "amount": -0.01,
+      "accountAmount": null,
+      "settlementAmount": null,
+      "currency": "PLN",
+      "accountCurrency": "PLN",
+      "settlementCurrency": null,
+      "exchange": null,
+      "accountingDate": 1536665547000,
+      "transactionDate": 1536665547000,
+      "transactionType": null,
+      "transactionTypeDesc": null,
+      "accountNo": "87161011332016015000250001",
+      "oppositeAccountNo": null,
+      "remitterBank": null,
+      "remitterSwift": null,
+      "remitter": [
+        "JAN KOWAL"
+      ],
+      "beneficiaryBank": null,
+      "beneficiarySwift": null,
+      "beneficiary": [
+        "RecipientName"
+      ],
+      "side": "DEBIT",
+      "balanceAfterOperation": 49999.99
+    }
+  ],
+  "numberOfElements": 8,
   "firstPage": true,
-  "lastPage": false
+  "lastPage": true
 }
 ```
 
